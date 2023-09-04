@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>NewJeans</title>
+  </head>
+  <body>
+    <main>
+      <div class="login-image-container">
+        <img
+          class="login-image"
+          src="./assets/NewJeans.jpg"
+          alt="로그인 페이지 이미지"
+        />
+      </div>
+      <section>
+        <form class="login-container">
+          <header class="logo-container">
+            <div class="text-deco">
+              <img id="star1" src="./assets/StarSilhouette.svg" />
+              <img id="star2" src="./assets/StarSilhouette.svg" />
+              <h1 class="logo-text">NewJeans.kr</h1>
+            </div>
+            <span>Please create your account.</span>
+          </header>
+          <div class="login-box">
+            <div class="input-container">
+              <input
+                minlength="2"
+                id="nickname"
+                autofocus
+                type="text"
+                required
+              />
+              <label for="nickname"> NICKNAME<span>*</span> </label>
+            </div>
+            <div class="input-container">
+              <input id="email" type="email" required />
+              <label for="email">E-MAIL<span>*</span></label>
+            </div>
+            <div class="input-container">
+              <input id="phone_number" type="text" required />
+              <label for="email">PHONE NUMBER<span>*</span></label>
+            </div>
+            <div class="input-container">
+              <input id="password" type="password" required />
+              <label for="password">PASSWORD<span>*</span></label>
+            </div>
+            <div class="input-container">
+              <input id="password_confirm" type="password" required />
+              <label for="password_confirm"
+                >PASSWORD CONFIRM<span>*</span></label
+              >
+            </div>
+            <div id="signup-button">
+              <button>Create Account</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+  <script type="text/javascript" src="scripts.js"></script>
+</html>
